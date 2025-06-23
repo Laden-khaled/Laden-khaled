@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لادن خالد</title>
+  <meta name="description" content="موقع شخصي للمطور لادن خالد">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: white;
+      color: #007acc;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>أهلًا وسهلًا 👋</h1>
+  <p>مرحبًا بك في الموقع الشخصي للمطور <strong>لادن خالد</strong> — هنا ستجد مشاريعي ومعلومات التواصل معي.</p>
+  <a class="btn" href="#projects">استعراض المشاريع</a>
+</body>
+</html>
