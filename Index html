@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- العنوان -->
+  <title>موقع لادن خالد | مطور مواقع ويب</title>
+
+  <!-- وصف الصفحة -->
+  <meta name="description" content="هذا الموقع هو المعرض الشخصي للمطور لادن خالد، يعرض فيه مشاريعه ومهاراته في تطوير واجهات الويب باستخدام HTML, CSS, وJavaScript.">
+
+  <!-- الكلمات المفتاحية -->
+  <meta name="keywords" content="لادن خالد, موقع شخصي, HTML, CSS, JavaScript, مطور مواقع">
+
+  <!-- اسم الكاتب -->
+  <meta name="author" content="Laden Khaled">
+
+  <!-- اللغة -->
+  <meta http-equiv="Content-Language" content="ar">
+
+  <!-- لأيقونات المشاركة -->
+  <meta property="og:title" content="موقع لادن خالد الشخصي">
+  <meta property="og:description" content="تعرف على مشاريع ومهارات المطور لادن خالد.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://laden-khaled.github.io/Laden-khaled/">
+
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>لادن خالد</title>
