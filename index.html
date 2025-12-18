@@ -1,171 +1,119 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html><html lang="ar">
 <head>
-<meta name="keywords" content="تخرج بشار, بشار تخرج, الدكتور بشار, تهنئة تخرج بشار, لادن خالد, لادن خالد محمد أحمد, موقع تهنئة, Bashar Graduation, Laden Khaled">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="keywords" content="تخرج بشار, بشار تخرج, الدكتور بشار, تهنئة تخرج بشار, لادن خالد, Laden Khaled, Bashar Graduation">
 <meta name="google-site-verification" content="x2pB4n3Cb8joTHgYZUkYnC6vzxcBcyf3nkWTXvPTKzY" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Laden Khaled Al-Zaazei</title>
-  <meta name="description" content="Official portfolio of Laden Khaled Al-Zaazei. IT student, frontend developer, and bot creator.">
-  <style>
-    body {
-      background: linear-gradient(120deg, #00c6ff, #0072ff);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-      position: relative;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.2em;
-      margin: 5px 0;
-    }
-    .links a {
-      color: white;
-      background-color: rgba(255,255,255,0.2);
-      text-decoration: none;
-      padding: 10px 20px;
-      margin: 10px;
-      border-radius: 20px;
-      display: inline-block;
-      transition: 0.3s;
-    }
-    .links a:hover {
-      background-color: rgba(255,255,255,0.4);
-      transform: scale(1.1);
-    }
-    /* الرسوم المتحركة للتهنئة */
-    .congrats {
-      margin-top: 40px;
-      font-size: 1.5em;
-      font-weight: bold;
-      background: linear-gradient(90deg, #ffb347, #ffcc33, #ff6f61);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: shine 3s linear infinite, bounce 2s ease-in-out infinite;
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 10px;
-    }
-
-    @keyframes shine {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
-    }
-
-    /* النجوم المتحركة */
-    .stars {
-      position: absolute;
-      width: 100%;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      overflow: hidden;
-      height: 100%;
-      z-index: 0;
-    }
-    .star {
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      background: white;
-      border-radius: 50%;
-      animation: twinkle 2s infinite;
-      opacity: 0;
-    }
-    @keyframes twinkle {
-      0%, 100% { opacity: 0; transform: scale(0.5); }
-      50% { opacity: 1; transform: scale(1.2); }
-    }
-
-    /* قسم الصور المتجاوبة */
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 40px;
-      z-index: 1;
-      position: relative;
-    }
-    .gallery img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 15px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-    }
-
-    /* تجاوب مع الأجهزة الصغيرة */
-    @media (max-width: 768px) {
-      .congrats { font-size: 1.2em; }
-      .gallery img { max-width: 80%; }
-    }
-  </style>
-</head>
+<title>Graduation Congratulations | Bashar</title>
+<meta name="description" content="Professional graduation congratulations website for Dr. Bashar, presented by Engineer Laden Khaled Mohammed Ahmed."><!-- React + jQuery --><script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script><script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script><script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script><script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><style>
+:root{
+  --main:#ffd700;
+  --glass:rgba(255,255,255,0.18);
+}
+body{
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  font-family:'Segoe UI',Tahoma,Verdana,sans-serif;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  overflow-x:hidden;
+}
+.card{
+  background:var(--glass);
+  backdrop-filter:blur(12px);
+  padding:40px 30px;
+  border-radius:30px;
+  max-width:900px;
+  width:90%;
+  box-shadow:0 25px 60px rgba(0,0,0,.4);
+}
+h1{
+  font-size:3em;
+  margin-bottom:10px;
+}
+.subtitle{
+  font-size:1.2em;
+  opacity:.9;
+}
+.badge{
+  display:inline-block;
+  margin:15px 0;
+  padding:8px 18px;
+  border-radius:30px;
+  background:linear-gradient(90deg,#ffb347,#ffd700);
+  color:#333;
+  font-weight:bold;
+}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:35px;
+}
+.gallery img{
+  width:100%;
+  border-radius:20px;
+  cursor:pointer;
+  transition:.4s;
+}
+.gallery img:hover{
+  transform:translateY(-10px) scale(1.05);
+  box-shadow:0 20px 40px rgba(0,0,0,.5);
+}
+button{
+  margin-top:30px;
+  padding:14px 35px;
+  font-size:1em;
+  border:none;
+  border-radius:40px;
+  cursor:pointer;
+  background:linear-gradient(90deg,#ffd700,#ffb347);
+  color:#333;
+}
+footer{
+  margin-top:40px;
+  font-size:.85em;
+  opacity:.7;
+}
+</style></head>
 <body>
+<div id="root"></div><script type="text/babel">
+function App(){
+  return(
+    <div className="card" id="mainCard">
+      <h1>🎓 Congratulations Dr. Bashar</h1>
+      <p className="subtitle">Graduation in Laboratory Sciences</p>
+      <div className="badge">Excellent Grade • 2nd Place</div>
+      <p>
+        This website is proudly dedicated to celebrating the graduation of
+        <strong> Dr. Bashar</strong>.
+      </p>
+      <p>
+        Presented by <strong>Engineer Laden Khaled Mohammed Ahmed</strong>.
+      </p>
 
-<h2>Graduation Congratulations Website</h2>
-<p>This website is dedicated to congratulating <strong>Dr. Bashar</strong> on his graduation.</p>
-<p>Presented with pride by <strong>Engineer Laden Khaled Mohammed Ahmed</strong>.</p>
-  <div class="congrats">
-    🎉 Congratulations to my cousin Bashar on your amazing achievement! Keep shining and reaching new heights! 🌟
-  </div>
+      <div className="gallery">
+        <img src="ggg.jpg" alt="Graduation 1" />
+        <img src="gg.jpg" alt="Graduation 2" />
+        <img src="gggg.jpg" alt="Graduation 3" />
+      </div>
 
-  <!-- قسم الصور -->
-  <div class="gallery">
-    <img src="ggg.jpg" alt="Image 1">
-<br>
-  <img src="gggg.jpg" alt="Image 3">
-<br>
-    <img src="gg.jpg" alt="Image 2">
-  
-  </div>
+      <button id="celebrate">Celebrate 🎉</button>
 
-  <!-- إضافة نجوم متحركة -->
-  <div class="stars" id="stars"></div>
-
-  <script>
-    // إنشاء نجوم متحركة عشوائية
-    const starsContainer = document.getElementById('stars');
-    for (let i = 0; i < 50; i++) {
-      const star = document.createElement('div');
-      star.className = 'star';
-      star.style.top = Math.random() * 100 + '%';
-      star.style.left = Math.random() * 100 + '%';
-      star.style.width = star.style.height = Math.random() * 4 + 2 + 'px';
-      star.style.animationDuration = 1 + Math.random() * 2 + 's';
-      starsContainer.appendChild(star);
-    }
-  </script>
-<!-- وسم Footer لحقوق النشر -->
-<footer style="
-  margin-top: 50px;
-  padding: 20px;
-  font-size: 0.9em;
-  color: rgba(255,255,255,0.7);
-  text-align: center;
-">
-  &copy; 2025 Laden Khaled. All Rights Reserved.
-</footer>
-</body>
+      <footer>
+        © 2025 Laden Khaled. All Rights Reserved.
+      </footer>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script><script>
+$('#celebrate').on('click',function(){
+  $('#mainCard').animate({opacity:0.6},200).animate({opacity:1},200);
+});
+</script></body>
 </html>
