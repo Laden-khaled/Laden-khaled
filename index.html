@@ -1,131 +1,292 @@
-<!DOCTYPE html><html lang="ar">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="keywords" content="تخرج بشار, بشار تخرج, الدكتور بشار, تهنئة تخرج بشار, لادن خالد, Laden Khaled, Bashar Graduation">
-<meta name="google-site-verification" content="x2pB4n3Cb8joTHgYZUkYnC6vzxcBcyf3nkWTXvPTKzY" />
-<title>Graduation Congratulations | Bashar</title>
-<meta name="description" content="Professional graduation congratulations website for Dr. Bashar, presented by Engineer Laden Khaled Mohammed Ahmed."><!-- React + jQuery --><script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script><script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script><script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script><script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><style>
-:root{
-  --main:#ffd700;
-  --glass:rgba(255,255,255,0.18);
-}
-body{
-  margin:0;
-  min-height:100vh;
-  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-  font-family:'Segoe UI',Tahoma,Verdana,sans-serif;
-  color:#fff;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  overflow-x:hidden;
-}
-.card{
-  background:var(--glass);
-  backdrop-filter:blur(12px);
-  padding:40px 30px;
-  border-radius:30px;
-  max-width:900px;
-  width:90%;
-  box-shadow:0 25px 60px rgba(0,0,0,.4);
-}
-h1{
-  font-size:3em;
-  margin-bottom:10px;
-}
-.subtitle{
-  font-size:1.2em;
-  opacity:.9;
-}
-.badge{
-  display:inline-block;
-  margin:15px 0;
-  padding:8px 18px;
-  border-radius:30px;
-  background:linear-gradient(90deg,#ffb347,#ffd700);
-  color:#333;
-  font-weight:bold;
-}
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-  margin-top:35px;
-}
-.gallery img{
-  width:100%;
-  border-radius:20px;
-  cursor:pointer;
-  transition:.4s;
-}
-.gallery img:hover{
-  transform:translateY(-10px) scale(1.05);
-  box-shadow:0 20px 40px rgba(0,0,0,.5);
-}
-button{
-  margin-top:30px;
-  padding:14px 35px;
-  font-size:1em;
-  border:none;
-  border-radius:40px;
-  cursor:pointer;
-  background:linear-gradient(90deg,#ffd700,#ffb347);
-  color:#333;
-}
-footer{
-  margin-top:40px;
-  font-size:.85em;
-  opacity:.7;
-}
-</style></head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="تخرج بشار, بشار تخرج, الدكتور بشار, تهنئة تخرج بشار, لادن خالد, Laden Khaled, Bashar Graduation" />
+    <title>مبروك التخرج | د. بشار</title>
+    <meta name="description" content="موقع تهنئة احترافي بتخرج الدكتور بشار، مقدم من المهندس لادن خالد محمد أحمد." />
+
+    <!-- Bootstrap 5 CSS (via CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            --gradient-gold: linear-gradient(135deg, #FFD700, #DAA520);
+            --gradient-blue: linear-gradient(135deg, #0f2027, #2c5364);
+            --shadow-lg: 0 25px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        body {
+            background: var(--gradient-blue);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* 主卡片 - 玻璃态效果 */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: var(--shadow-lg);
+            padding: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        /* 标题样式 */
+        .congrats-title {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
+        }
+
+        /* 成就徽章 */
+        .achievement-badge {
+            display: inline-block;
+            padding: 0.6rem 1.8rem;
+            background: var(--gradient-gold);
+            color: #333;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(218, 165, 32, 0.4);
+            margin: 1rem 0;
+        }
+
+        /* 庆祝按钮 */
+        .btn-celebrate {
+            padding: 0.8rem 3rem;
+            background: var(--gradient-gold);
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+        }
+        .btn-celebrate:hover, .btn-celebrate:active {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 25px rgba(255, 215, 0, 0.5);
+            color: #000;
+        }
+
+        /* 响应式图库样式 */
+        .gallery-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-img:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 模态框样式 */
+        #imageModal .modal-content {
+            background: rgba(15, 32, 39, 0.95);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 20px;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            opacity: 0.8;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* 大屏幕上的额外边距 */
+        @media (min-width: 992px) {
+            .glass-card {
+                margin-top: 4rem;
+            }
+        }
+
+        /* 庆祝动画 - 彩色纸屑 */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 10000;
+        }
+    </style>
+</head>
 <body>
-<div id="root"></div><script type="text/babel">
-function App(){
-  return(
-    <div className="card" id="mainCard">
-      <h1>🎓 Congratulations Dr. Bashar</h1>
-      <p className="subtitle">Graduation in Laboratory Sciences</p>
-      <div className="badge">Excellent Grade • 2nd Place</div>
-      <p>
-        This website is proudly dedicated to celebrating the graduation of
-        <strong> Dr. Bashar</strong>.
-      </p>
-      <p>
-        Presented by <strong>Engineer Laden Khaled Mohammed Ahmed</strong>.
-      </p>
 
-      <div className="gallery">
-        <img src="ggg.jpg" alt="Graduation 1" />
-<br/>
-        <img src="gg.jpg" alt="Graduation 2" />
-<br/>
-        <img src="gggg.jpg" alt="Graduation 3" />
-<br/>
-  <img src="IM1.jpg" alt="Graduation 3" />
-<br/>
-  <img src="IM2.jpg" alt="Graduation 3" />
-<br/>
-
-       <img src="IM3.jpg" alt="Graduation 3" />
-<br/>
-
-  <img src="IM4.jpg" alt="Graduation 3" />
- </div>
-
-      <button id="celebrate">Celebrate 🎉</button>
-
-      <footer>
-        © 2025 Laden Khaled. All Rights Reserved.
-      </footer>
+    <!-- 网站主内容 -->
+    <div class="container py-4 py-lg-5" id="root">
+        <!-- 内容将通过React在此渲染 -->
     </div>
-  );
-}
-ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
-</script><script>
-$('#celebrate').on('click',function(){
-  $('#mainCard').animate({opacity:0.6},200).animate({opacity:1},200);
-});
-</script></body>
+
+    <!-- 图片预览模态框 (Modal) -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center p-0">
+                    <img src="" id="modalImage" class="img-fluid rounded" style="max-height: 80vh;" alt="معاينة الصورة">
+                </div>
+                <div class="modal-footer justify-content-center border-0">
+                    <button type="button" class="btn btn-sm btn-outline-light" data-bs-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 脚本依赖 -->
+    <!-- jQuery (用于动画和简单DOM操作) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap 5 JS Bundle (包含Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- React 18 开发版 & Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+        // React 组件 - 网站主内容
+        function App() {
+            return (
+                <div className="glass-card">
+                    {/* 标题部分 */}
+                    <header className="text-center mb-5">
+                        <h1 className="congrats-title display-3 fw-bold mb-3">
+                            <i className="bi bi-mortarboard-fill"></i> مبروك التخرج دكتور بشار
+                        </h1>
+                        <p className="lead fs-4 opacity-90">تخرج في علوم المختبرات بامتياز</p>
+                        <div className="achievement-badge fs-5">
+                            <i className="bi bi-award-fill me-2"></i> مرتبة الشرف الثانية • درجة الامتياز
+                        </div>
+                    </header>
+
+                    {/* 主要贺词段落 */}
+                    <section className="text-center mb-5">
+                        <p className="fs-5 mb-4">
+                            يُهدى هذا الموقع بكل فخر واعتزاز للاحتفاء بتخرج <strong className="text-warning">الدكتور بشار</strong>،
+                            <br />تقديرًا للجهد الكبير والتفوق العلمي المشرّف.
+                        </p>
+                        <p className="fs-5">
+                            مقدم من <strong className="text-warning">المهندس لادن خالد محمد أحمد</strong>.
+                        </p>
+                    </section>
+
+                    {/* 响应式图片网格 */}
+                    <section className="mb-5">
+                        <h3 className="h4 text-center mb-4"><i className="bi bi-images me-2"></i>ذكريات التخرج</h3>
+                        <div className="row g-4" id="photoGallery">
+                            {/* 第一行图片 */}
+                            {['ggg.jpg', 'gg.jpg', 'gggg.jpg'].map((img, idx) => (
+                                <div className="col-md-4 col-sm-6" key={idx}>
+                                    <img src={img} className="gallery-img" alt={`صورة تخرج ${idx+1}`} data-bs-toggle="modal" data-bs-target="#imageModal" data-img={img} />
+                                </div>
+                            ))}
+                            {/* 第二行图片 */}
+                            {['IM1.jpg', 'IM2.jpg', 'IM3.jpg', 'IM4.jpg'].map((img, idx) => (
+                                <div className="col-md-3 col-sm-6" key={idx+3}>
+                                    <img src={img} className="gallery-img" alt={`ذكرى تخرج ${idx+4}`} data-bs-toggle="modal" data-bs-target="#imageModal" data-img={img} />
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+
+                    {/* 庆祝按钮 */}
+                    <section className="text-center mt-5">
+                        <button className="btn-celebrate" id="celebrateBtn">
+                            <i className="bi bi-emoji-sunglasses me-2"></i> احتفل معنا 🎉
+                        </button>
+                    </section>
+
+                    {/* 页脚 */}
+                    <footer className="site-footer text-center">
+                        © 2025 لادن خالد. جميع الحقوق محفوظة.
+                    </footer>
+                </div>
+            );
+        }
+
+        // 渲染React应用
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
+
+    <script>
+        // DOM加载完成后执行
+        $(document).ready(function() {
+            const $celebrateBtn = $('#celebrateBtn');
+            const $modalImage = $('#modalImage');
+
+            // 1. 图片模态框点击事件
+            $('#photoGallery').on('click', 'img', function() {
+                const imgSrc = $(this).attr('src');
+                $modalImage.attr('src', imgSrc);
+            });
+
+            // 2. 增强版庆祝按钮点击事件
+            $celebrateBtn.on('click', function() {
+                const $btn = $(this);
+                const $card = $('.glass-card');
+
+                // 按钮动画
+                $btn.prop('disabled', true).html('<i class="bi bi-stars me-2"></i> مبرووووك! 🎊');
+                $btn.addClass('animate__animated animate__tada');
+
+                // 卡片庆祝动画
+                $card.css('transition', 'all 0.5s ease');
+                $card.css('box-shadow', '0 0 60px rgba(255, 215, 0, 0.7)');
+
+                // 简单的彩色纸屑效果
+                createConfetti();
+
+                // 3秒后恢复原状
+                setTimeout(function() {
+                    $card.css('box-shadow', '0 25px 60px rgba(0, 0, 0, 0.4)');
+                    $btn.prop('disabled', false).html('<i class="bi bi-emoji-sunglasses me-2"></i> احتفل معنا 🎉');
+                    $btn.removeClass('animate__animated animate__tada');
+                }, 3000);
+            });
+
+            // 创建彩色纸屑的简单函数
+            function createConfetti() {
+                const colors = ['#FFD700', '#FF6B6B', '#4ECDC4', '#FF9FF3'];
+                for (let i = 0; i < 50; i++) {
+                    const $confetti = $('<div class="confetti"></div>');
+                    $confetti.css({
+                        'background': colors[Math.floor(Math.random() * colors.length)],
+                        'left': Math.random() * 100 + 'vw',
+                        'top': '-10px',
+                        'border-radius': Math.random() > 0.5 ? '50%' : '0'
+                    });
+                    $('body').append($confetti);
+
+                    // 纸屑动画
+                    $confetti.animate({
+                        top: '100vh',
+                        left: $confetti.position().left + (Math.random() - 0.5) * 200,
+                        opacity: 0.7
+                    }, 1500 + Math.random() * 1000, function() {
+                        $(this).remove();
+                    });
+                }
+            }
+
+            // 3. 页面加载时的欢迎效果
+            setTimeout(function() {
+                $('.glass-card').hide().fadeIn(1000);
+            }, 300);
+        });
+    </script>
+</body>
 </html>
